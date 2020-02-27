@@ -1,0 +1,30 @@
+{
+  "name": "epic-template",
+  "version": "1.0.0",
+  "description": "Epic template for a web app using Yarn, Express, React, and Parcel",
+  "main": "app.js",
+  "repository": "git@github.com:printer83mph/epic-template.git",
+  "author": "Thomas Shaw <printer.83mph@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "express": "^4.17.1",
+    "morgan": "^1.9.1",
+    "parcel-bundler": "^1.12.4",
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.18.3"
+  },
+  "scripts": {
+    "parcel": "parcel src/index.html",
+    "build": "parcel build src/index.html",
+    "startDev": "node app.js dev",
+    "start": "node app.js"
+  }
+}
