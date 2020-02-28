@@ -2,13 +2,13 @@ require('dotenv').config();
 
 const path = require('path'),
   express = require('express'),
-  morgan = require('morgan')('dev');
+  morgan = require('morgan');
 
 const port = 3000;
 
 const app = express();
 
-if (process.env.DEV === "true") app.use(morgan);
+if (process.env.DEV === "true") app.use(morgan('dev'));
 
 app.use(express.static(path.join(__dirname, 'dist')));
 
