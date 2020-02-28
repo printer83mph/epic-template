@@ -1,4 +1,4 @@
-const dev = process.argv[2] === 'dev';
+require('dotenv').config();
 
 const path = require('path'),
   express = require('express'),
@@ -8,7 +8,7 @@ const port = 3000;
 
 const app = express();
 
-if (dev) app.use(morgan);
+if (process.env.DEV === "true") app.use(morgan);
 
 app.use(express.static(path.join(__dirname, 'dist')));
 

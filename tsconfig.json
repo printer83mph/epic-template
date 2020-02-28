@@ -1,0 +1,10 @@
+{
+  "include": [
+    "src/js/**/*"
+  ],
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "jsx": "react",
+    "moduleResolution": "node"
+  }
+}
